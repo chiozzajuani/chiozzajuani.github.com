@@ -21,6 +21,7 @@ a{
 
 .title{
     text-transform: uppercase;
+    text-align: center;
 }
 
 .paragraph{
@@ -50,6 +51,35 @@ a{
     /*box-shadow: 0 3px 6px #000; /* se ignora el de la amplitud*/
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /*SHADOW: SOMBRA*/
     border-radius: 4px;
+    position: relative;
+    padding: 1.8em;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+a:hover{
+    opacity: 0.8; /* cuando pasemos por encima de los link se opacara*/
+}
+
+/*a:visited  indica que el link ya ah sido visitado */
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #642B73;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .table{
@@ -74,6 +104,7 @@ a{
     /*border-bottom-style: solid;
     border-width: 2px;
     border-color: #c64263;*/
+    font-size: 2em;
     border-bottom: solid 2px #c64263;
     padding-bottom: 1em;
     /*padding especifico
@@ -86,5 +117,17 @@ a{
     color: white;
     padding: 10px;
     border-radius: 4px;
+    margin-right: 0.5em;
 }
 
+.address{
+    font-weight: bold;
+    color: #642B73;
+    font-size: 1.2em;
+}
+
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 200px;
+}
